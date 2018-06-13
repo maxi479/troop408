@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<!-- 100th commit! -->
+  <head>
+   <title>Lynbrook CGD</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link href="css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+   <link href="css/hover.css" rel="stylesheet">
+   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+   <link href='http://fonts.googleapis.com/css?family=Poiret+One|Raleway:200|Hind:200' rel='stylesheet' type='text/css'>
+   <!--kushnote- jquery plugins here-->
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/typed.js"></script>
+   <script src="js/smooth-scroll.js"></script>
+   <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+   </head>
+<body>
+
+  <header>
+
+    <a href="#" id="logo"></a>
+
+    <nav>
+
+      <a href="#" id="menu-icon"></a>
+
+      <ul>
+
+        <li><a data-scroll href="#home">Home</a></li>
+        <li><a data-scroll href="#aboutus">About us</a></li>
+        <li><a data-scroll href="#team">Team</a></li>
+        <li><a data-scroll href="#updates">Updates</a></li>
+          <li><a href="https://drive.google.com/open?id=0B4ENPkHOkvsbb0dETnI3YUZMZzA">Presentations</a></li>
+          <li><a href="https://drive.google.com/open?id=1cyga5xK4ewrjV1K_i8_ehlDbA4W9NGxv8ewySpMU34k">Points</a></li>
+          <li><a data-scroll href="#signup">Sign Up</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <div class ="intro" id = "home">  
+    <div class = "content">
+      <h1>Welcome to Creative Game Design</h1>
+      <p>Where Innovation Meets Gaming</p>
+      <div class = "button">
+        <a class="element" href="https://goo.gl/forms/IpZZlSKJII7SMUq43"></a>
+      </div>
+    </div>
+   <a data-scroll href="#aboutus" class="hvr-icon-grow"></a>
+  </div>
+
+
+  <div class="what" id ="aboutus">
+    <h1>The Experience</h1>
+    <hr width="35%">
+
+    <img src="images/mockupunity.png" height="50%" width="50%" id="textimg">
+    <!--<h2 class ="general">Create. Design. Code.<h2>-->
+    <h3 class = "desctext">In CGD, you are not going to only be making games. More often than not, you'll be learning how to make cool stuff. We are going to teach you to use and master game engines, which is what big companies
+     use in order to create well-known titles such as Battlefield, League of Legends, and Call of Duty. You'll experience VR, AR, and sensor-driven game creation. You'll control virtual drones with nothing but your hand. Every single game has a ton of code and creativity behind it and that's what CGD is offering: <p>A chance at the whole experience of designing a game.
+     <p><br>
+     <span style="font-size:25px; color:#116644;">Imagine. Create. Code.</span>
+     </h3>
+  </div> 
+
+  <div class="team" id="team">
+    <h1>Our team</h1>
+      <div class="imgholder">
+      <h2>Sube B.</h2>
+      <img src="images/sube.png" height="200px" width="175px">
+      </div>
+      <div class ="imgholder">
+      <h2>Vaishnav B.</h2>
+      <img src="images/vaish.png" height="200px" width="175px">
+      </div>
+      <div class ="imgholder">
+          
+      <h2>Ashwin N.</h2>
+      <img src="images/ashwin.png" height="200px" width="175px">
+      </div>
+      <div class ="imgholder">
+      <h2>Kavi N.</h2>
+      <img src ="images/kavi.jpg" height="200px" width="175px">
+      </div>
+       <div class = "imgholder">
+      <h2>Kushal T.</h2>
+      <img src="images/kushal.jpeg" height="200px" width="175px">
+      </div>
+      <div class="imgholder">
+          <h2> Raymond X.</h2>
+          <img src="images/raymond.png" height="200px" width="175px">
+      </div>
+  </div>
+
+  <div id="updates" class = "meetings">
+  <h1>Updates</h1>
+  <hr width="20%">
+  <h2>Meetings - Tuesdays at Lunch in Room 213!</h2>
+  <h2>Thanks to everyone who attended our first meeting! Remember to download Unity by clicking <a href="http://tinyurl.com/unityhere">here</a> and sign up below if you haven't already to receive club updates.</h2>
+  <h3>Our <a href="https://github.com/LHS-CGD">github</a></h3>
+  </div>
+
+  <div id="signup" class="sign">
+    <div class = "button2">
+        <a href="https://goo.gl/forms/IpZZlSKJII7SMUq43">Sign Up</a>
+      </div>
+  </div>
+
+</body>
+<script>
+  /**character limit for typed is 13 - KUSHNOTE*/
+    $(function(){
+        $(".element").typed({
+            strings: ["Sign up", "Join CGD", "Develop Games", "Use Engines", "Experience VR", "Learn Unity", "Create Stories"],
+            typeSpeed: 0,
+            backDelay: 900,
+            showCursor:false,
+            loop:true
+        });
+    });
+    
+smoothScroll.init({
+        speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+    easing: 'easeOutQuad', // Easing pattern to use
+    updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+    offset: 79, // Integer. How far to offset the scrolling anchor location in pixels
+    callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+    callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+  });
+</script>
+</html>
